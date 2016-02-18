@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import { SOME_ACTION } from '../constants/ActionTypes';
+import Client from './Client';
 
 export default class Main extends Component {
   static propTypes = {
@@ -7,13 +8,13 @@ export default class Main extends Component {
     actions: PropTypes.object.isRequired
   }
 
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
   }
 
   render() {
     return (
-      <div>Main componentSome</div>
+      <Client src={this.props.webchat.src} setLocalStream={this.props.actions.setLocalStream} />
     );
   }
 }

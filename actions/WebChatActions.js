@@ -1,8 +1,8 @@
 import * as types from '../constants/ActionTypes';
 
-export function someAction(payload) {
+export function setLocalStream(src) {
   return {
-    type: types.SOME_ACTION,
-    payload
+    type: types.SET_LOCAL_STREAM,
+    src: src
   }
 }

@@ -1,2 +1,2 @@
-export const SOME_ACTION = 'SOME_ACTION';
+export const SET_LOCAL_STREAM = 'SET_LOCAL_STREAM';
 
