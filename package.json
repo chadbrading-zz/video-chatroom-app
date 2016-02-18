@@ -1,7 +1,7 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "web-chat",
   "version": "0.0.1",
-  "description": "React Redux Boilerplate",
+  "description": "Web Chat",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
