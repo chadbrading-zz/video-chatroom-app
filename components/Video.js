@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class Video extends Component {
   render() {
     return (
-      <video autoPlay src={this.props.src}></video>
+      <video autoPlay muted src={this.props.stream}></video>
     )
   }
 }

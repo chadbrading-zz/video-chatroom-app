@@ -9,7 +9,7 @@ export default class Client extends Component {
   }
   render() {
     return (
-      <Video src={this.props.src} />
+      <Video stream={this.props.stream} />
     )
   }
 }
