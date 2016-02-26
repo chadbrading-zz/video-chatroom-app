@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Video from './Video';
 
-export default class Client extends Component {
+export default class LocalClient extends Component {
   componentDidMount() {
     navigator.getUserMedia({audio: true, video: true}, this.props.setLocalStream, error => {
       console.log("getUserMedia error: ", error)
@@ -9,7 +9,7 @@ export default class Client extends Component {
   }
   render() {
     return (
-      <Video stream={this.props.stream} />
+      <Video stream={URL.createObjectURL(this.props.stream)} />
     )
   }
 }
